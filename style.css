@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%) ;
+}
+
+.con{
+  display: flex;
+  flex-direction: column;
+  height: auto; 
+  margin-top: 50px;
+}
+
+.box1, .box2{
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bx, .bx2{
+  width: 82%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 12px;
+}
+
+.bx>h1{
+  font-size: 32px;
+  text-align: center;
+}
+
+.bx>p{
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bx2>form{
+  background-color: hsl(0, 0%, 69%);
+  padding:15px 20px 15px 15px;
+  border-radius: 6px;
+  
+}
+
+input{
+  width: 90%;
+  height: 40px;
+  margin-left: 18px;
+  margin-top: 15px;
+  padding: 12px 0 12px 12px;
+  border-radius: 5px;
+  border:0;
+}
+
+.blue{
+  margin-bottom: 15px;
+  height: 60px;
+  background-color: hsl(246, 36%, 51%);
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn{
+  background-color: hsl(154, 59%, 51%);
+  color:whitesmoke
+}
+
+.small{
+  font-size:12px;
+  margin:auto;
+  margin-top: 8px;
+  width:80%;
+  text-align: center;
+}
+
+span{
+  color:red
+}
+
+
+
+
+@media(min-width:800px){
+
+  body{
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+  }
+  
+
+  .con{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;  
+  }
+  
+  .box1, .box2{
+    flex:1;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .bx, .bx2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bx>h1{
+    font-size: 37px;
+    text-align: left;
+  }
+  
+  .bx>p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .box2{
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bx{
+    width: 70%;
+    padding: 15px;
+  }
+  
+  .bx2{
+    width: 70%;
+  }
+  
+  .bx2>form{
+    background-color: hsl(0, 0%, 69%);
+    padding:15px 20px 15px 15px;
+    border-radius: 6px;
+    
+  }
+  
+  input{
+    width: 85%;
+    height: 40px;
+    margin-top: 15px;
+    margin-left:35px ;
+    padding: 12px 0 12px 12px;
+    border-radius: 5px;
+    border: 0;
+  }
+  
+  .blue{
+    margin-bottom: 15px;
+    height: 50px;
+    background-color: hsl(246, 36%, 51%);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .btn{
+    background-color: hsl(154, 59%, 51%);
+    color:whitesmoke
+  }
+  
+  .small{
+    font-size:12px;
+    margin:auto;
+    margin-top: 8px;
+    width:85%;
+    text-align: left;
+  }
+  
+  span{
+    color:red
+  }
+
+}
+
