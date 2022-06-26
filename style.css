@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -7,6 +9,8 @@
 body{
   background-image: url("images/bg-intro-mobile.png");
   background-color: hsl(0, 100%, 74%) ;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 .con{
@@ -14,6 +18,7 @@ body{
   flex-direction: column;
   height: auto; 
   margin-top: 50px;
+  height:100vh;
 }
 
 .box1, .box2{
@@ -74,19 +79,17 @@ input{
 }
 
 .small{
-  font-size:12px;
+  font-size: 9px;
+  font-weight: 300;
   margin:auto;
   margin-top: 8px;
-  width:80%;
+  width:75%;
   text-align: center;
 }
 
 span{
   color:red
 }
-
-
-
 
 @media(min-width:800px){
 
@@ -145,7 +148,7 @@ span{
   }
   
   .bx2>form{
-    background-color: hsl(0, 0%, 69%);
+    background-color: rgb(209, 207, 207);
     padding:15px 20px 15px 15px;
     border-radius: 6px;
     
@@ -177,11 +180,12 @@ span{
   }
   
   .small{
-    font-size:12px;
+    font-size:8px;
     margin:auto;
     margin-top: 8px;
-    width:85%;
+    width:75%;
     text-align: left;
+    padding-left:12px;
   }
   
   span{
